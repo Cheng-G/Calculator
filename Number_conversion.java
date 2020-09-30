@@ -49,7 +49,6 @@ public class Number_conversion {
 
     //二进制 → 十进制
     public static String two_ten_translate(String translateString) {
-
         char[] allNumber = translateString.toCharArray();
         String pointNumber = "0";
         String number = "";
@@ -68,11 +67,9 @@ public class Number_conversion {
         for(int j = 0; j < place; j++) {
             number += allNumber[j];
         }
-
         double point = Double.parseDouble(pointNumber);
 //        System.out.println("小数：" + point);
 //        System.out.println("整数：" + number);
-
         //整数处理部分
         double after = 0;
         char[] string = ("" + number).toCharArray();
@@ -87,7 +84,6 @@ public class Number_conversion {
                 after += Double.parseDouble("" + string[i]) * multiply;
             }
         }
-
         //小数处理部分
         double afterPoint = 0.0;
         char[] stringPoint = ("" + point).toCharArray();
@@ -105,13 +101,11 @@ public class Number_conversion {
                 System.out.println("afterPoint:" + afterPoint);
             }
         }
-
         return "" + (after + afterPoint);
     }
 
     //十进制 → 二进制
     public static String ten_two_translate(String translateString) {
-
         char[] allNumber = translateString.toCharArray();
         String pointNumber = "0";
         String number = "";
@@ -130,7 +124,6 @@ public class Number_conversion {
         for(int j = 0; j < place; j++) {
             number += allNumber[j];
         }
-
         double point = Double.parseDouble(pointNumber);
 //        System.out.println("小数：" + point);
 //        System.out.println("整数：" + number);
@@ -158,7 +151,6 @@ public class Number_conversion {
 
         }
         double num1 = Double.parseDouble(pointNumberTranslate);
-
         int num = Integer.parseInt(number);
 //        System.out.println("整数：" + num);
         String numberTranslate = "0";
@@ -206,7 +198,6 @@ public class Number_conversion {
         double point = Double.parseDouble(pointNumber);
 //        System.out.println("小数：" + point);
 //        System.out.println("整数：" + number);
-
         //整数处理部分
         double after = 0;
         char[] string = ("" + number).toCharArray();
@@ -221,7 +212,6 @@ public class Number_conversion {
                 after += Double.parseDouble("" + string[i]) * multiply;
             }
         }
-
         //小数处理部分
         double afterPoint = 0.0;
         char[] stringPoint = ("" + point).toCharArray();
@@ -245,7 +235,6 @@ public class Number_conversion {
 
     //十进制 → 八进制
     public static String ten_eight_translate(String translateString) {
-
         char[] allNumber = translateString.toCharArray();
         String pointNumber = "0";
         String number = "";
@@ -268,7 +257,6 @@ public class Number_conversion {
         double point = Double.parseDouble(pointNumber);
 //        System.out.println("小数：" + point);
 //        System.out.println("整数：" + number);
-
         //小数处理部分
         String pointNumberTranslate = "0.";
         while(true) {
@@ -294,7 +282,6 @@ public class Number_conversion {
 
         }
         double num1 = Double.parseDouble(pointNumberTranslate);
-
         //整数处理部分
         int num = Integer.parseInt(number);
         System.out.println("整数：" + num);
